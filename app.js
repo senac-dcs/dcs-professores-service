@@ -6,6 +6,7 @@ const swaggerUi = require("swagger-ui-express");
 var cors = require('cors');
 const professorRouter = require('./routes/professorRoute');
 const dbs = require('./configs/dbs');
+var port = process.env.PORT || 8080;
 
 const options = {
   definition: {
@@ -43,6 +44,9 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use('/', professorRouter);
 
 dbs.connect;
-app.set('port', 3000);
+
+app.listen(port, () => {
+  console.log('Listen to port 3000')
+});
 
 module.exports = app;

@@ -1,9 +1,10 @@
 {
   "name": "dcs-professores-service",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Serviço de professor para o app academico da cadeira de dcs",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
