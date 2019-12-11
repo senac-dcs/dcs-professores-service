@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 //var url = 'mongodb://localhost:27017/dcs'
-const url = "mongodb+srv://andre:0227531E@trabalhodcs-pruc2.mongodb.net/test?retryWrites=true&w=majority";
+const url = MongoDB_URL;
 var db = mongoose.connection;
 
 db.on('error', console.error);
