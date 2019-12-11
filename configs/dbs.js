@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 //var url = 'mongodb://localhost:27017/dcs'
-const url = MongoDB_URL;
+const url = process.env.MongoDB_URL;
 var db = mongoose.connection;
 
 db.on('error', console.error);
