@@ -79,7 +79,7 @@ routers.put('/professores/:id',professorController.update);
  * /professores/{id}:
  *   get:
  *     tags:
- *       - Puppies
+ *       - Professores
  *     description: Returns a single teacher
  *     produces:
  *       - application/json
@@ -103,7 +103,7 @@ routers.get('/professores/:id',professorController.getById);
  * /professores/{id}:
  *   delete:
  *     tags:
- *       - Puppies
+ *       - Professores
  *     description: Deletes a single teacher
  *     produces:
  *       - application/json
